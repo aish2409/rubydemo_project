@@ -18,11 +18,13 @@ module Check
   end
 
   def horizon?(sign)
-    check_condition(0, 1, 2, sign) || check_condition(3, 4, 5, sign) || check_condition(6, 7, 8, sign)
+    check_condition(0, 1, 2, sign) || check_condition(3, 4, 5, sign) ||
+    check_condition(6, 7, 8, sign)
   end
 
   def vertical?(sign)
-    check_condition(0, 3, 6, sign) || check_condition(1, 4, 7, sign) || check_condition(2, 5, 8, sign)
+    check_condition(0, 3, 6, sign) || check_condition(1, 4, 7, sign) ||
+    check_condition(2, 5, 8, sign)
   end
 
   def digonal?(sign)
